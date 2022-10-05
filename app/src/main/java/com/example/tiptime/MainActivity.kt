@@ -1,6 +1,5 @@
 package com.example.tiptime
 
-import android.icu.util.CurrencyAmount
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -13,7 +12,6 @@ import androidx.compose.material.TextField
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.modifier.modifierLocalOf
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
@@ -57,7 +55,7 @@ fun EditNumberField(
         value,
         onValueChange,
         label = {
-            Text(text = stringResource(id = R.string.cost_of_service))
+            Text(text = stringResource(id = R.string.bill_amount))
         },
         modifier = Modifier.fillMaxWidth(),
         singleLine = true,
